@@ -5,62 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>G4S Panel | Monitoreo</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
 </head>
-<body class="dark-theme">
+<body>
+    <!-- DESARROLLADORES 3 Y 4: Pueden borrar este H1 y empezar a programar el dashboard desde cero -->
+    <h1>Panel de Administración y Monitoreo de Cámaras</h1>
+    <p>Revisa la consola (F12) para ver los datos cargados desde api.js</p>
     
-    <nav class="navbar glass">
-        <div class="logo" style="color: var(--accent-color);">G4S Dashboard</div>
-        <ul class="nav-links">
-            <li><a href="dashboard.html" class="active">Mis Cámaras</a></li>
-            <li><a href="index.html">Tienda Web</a></li>
-            <li><a href="#" style="display: flex; align-items: center; gap: 8px;">
-                <img src="https://ui-avatars.com/api/?name=Usuario&background=10b981&color=fff" style="width: 30px; border-radius: 50%;"> Perfil
-            </a></li>
-        </ul>
-    </nav>
-
-    <main class="container" style="display: flex; gap: 2rem;">
-        
-        <!-- DESARROLLADOR 3 (ADMINISTRACIÓN): Tu trabajo en la barra lateral -->
-        <aside style="width: 250px; padding: 1.5rem; border-radius: 12px;" class="glass-card">
-            <h3>Mis Ubicaciones</h3>
-            <ul id="lista-ubicaciones" style="list-style:none; margin-top:1rem; line-height: 2.5;">
-                <li style="cursor: pointer; color: var(--primary-color);">▶ Oficina Central</li>
-                <li style="cursor: pointer; color: #94a3b8;">Bodega Norte</li>
-            </ul>
-            <button class="btn" style="width: 100%; margin-top: 20px; font-size: 0.9rem;">+ Añadir Cámara</button>
-        </aside>
-
-        <!-- DESARROLLADOR 4 (MONITOREO): Tu trabajo en la sección central -->
-        <section style="flex: 1;">
-            
-            <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px;">
-                <h2>Cámara: Oficina Central - Principal</h2>
-                <span style="background: rgba(16, 185, 129, 0.2); color: var(--accent-color); padding: 4px 12px; border-radius: 20px; font-size: 0.8rem; font-weight: bold;">
-                    ● En línea
-                </span>
-            </div>
-
-            <!-- Contenedor del video -->
-            <div id="video-player" style="width: 100%; height: 500px; background: #000; border-radius: 12px; display:flex; justify-content:center; align-items:center; border: 1px solid #334155; position: relative;">
-                <p style="color: #64748b;">[Simulador de Reproductor de Video]</p>
-            </div>
-            
-            <div style="margin-top: 2rem;">
-                <h3>Grabaciones Recientes</h3>
-                <div id="lista-grabaciones" style="display: flex; gap: 1rem; margin-top: 1rem; overflow-x: auto;">
-                    <!-- Ejemplo de archivo -->
-                    <div style="background: rgba(30,41,59,0.5); padding: 1rem; border-radius: 8px; min-width: 150px; text-align: center;">
-                        <span style="font-size: 2rem;">🎥</span>
-                        <p style="font-size: 0.8rem; margin-top: 8px;">Ayer, 18:00</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
-
+    <!-- Scripts obligatorios -->
     <script src="js/api.js"></script>
+    <!-- Tu archivo JS personal (créalo cuando lo necesites) -->
     <script src="js/camaras.js"></script>
 </body>
 </html>

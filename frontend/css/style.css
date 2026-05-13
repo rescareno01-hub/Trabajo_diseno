@@ -1,130 +1,20 @@
-
-
-:root {
-    --bg-color: #ffffff; /* Azul muy oscuro para el fondo */
-    --text-color: #000000; /* Texto casi blanco */
-    --primary-color: #ed0000; /* Azul corporativo tecnológico */
-    --accent-color: #10b981; /* Verde esmeralda (Cámara online/Seguridad) */
-    --danger-color: #ef4444; /* Rojo para alertas */
-    --glass-bg: rgba(30, 41, 59, 0.7); /* Fondo transparente para glassmorphism */
-    --glass-border: rgba(0, 0, 0, 0.1);
-}
+/* 
+  =======================================
+  ARCHIVO: style.css
+  =======================================
+  Este es el archivo de estilos global.
+  Todos los desarrolladores pueden escribir su código CSS aquí.
+  (Se recomienda dividir con comentarios, ej: /* --- VISTA VENTAS --- */ 
+*/
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
 }
 
-body.theme {
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    /* Patrón de fondo muy sutil */
-    background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
-    background-size: 20px 20px;
-}
-
-/* =======================================
-   COMPONENTES (Compartidos por todos)
-   ======================================= */
-
-/* Navbar Glassmorphism */
-.navbar.glass {
-    background: var(--glass-bg);
-    backdrop-filter: blur(12px);
-    -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid var(--glass-border);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 5%;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-}
-
-.logo {
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: var(--primary-color);
-    letter-spacing: -0.5px;
-}
-
-.nav-links {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
-}
-
-.nav-links a {
-    color: #94a3b8;
-    text-decoration: none;
-    font-weight: 600;
-    transition: color 0.3s, transform 0.2s;
-}
-
-.nav-links a:hover, .nav-links a.active {
-    color: var(--text-color);
-    transform: translateY(-1px);
-}
-
-/* Botones */
-.btn {
-    background: linear-gradient(135deg, var(--primary-color), #cf0000);
-    color: rgb(255, 255, 255);
-    border: none;
-    padding: 0.6rem 1.2rem;
-    border-radius: 8px;
-    cursor: pointer;
-    font-weight: 600;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(59, 130, 246, 0.2);
-}
-
-.btn:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(62, 52, 52, 0.3);
-}
-
-/* Tarjetas (Glassmorphism) */
-.glass-card {
-    background: rgba(30, 41, 59, 0.4);
-    backdrop-filter: blur(8px);
-    border: 1px solid var(--glass-border);
-    transition: transform 0.3s ease, border-color 0.3s;
-}
-
-.glass-card:hover {
-    border-color: rgba(255, 255, 255, 0.2);
-}
-
-/* =======================================
-   ESTRUCTURA DE PÁGINAS
-   ======================================= */
-.container {
-    padding: 3rem 5%;
-    max-width: 1400px;
-    margin: 0 auto;
-}
-
-.hero {
-    text-align: center;
-    padding: 80px 20px;
-    background: radial-gradient(circle at top, rgba(59,130,246,0.15) 0%, transparent 60%);
-}
-
-.hero h1 {
-    font-size: 3.5rem;
-    margin-bottom: 1rem;
-    background: linear-gradient(to right, #60a5fa, #34d399);
-    -webkit-background-clip: text;
-     background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.grid-productos {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-    gap: 2rem;
+body {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #f4f4f9;
 }
