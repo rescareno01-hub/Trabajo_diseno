@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G4S Security | Tienda</title>
+    <!-- El CSS común para todos -->
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="theme">
+    
+    <!-- Navbar común -->
+    <nav class="navbar glass">
+        <div class="logo">G4S Security</div>
+        <ul class="nav-links">
+            <li><a href="index.html" class="active">Catálogo</a></li>
+            <li><a href="carrito.html">Carrito <span id="cart-count">(0)</span></a></li>
+            <li><a href="dashboard.html">Ir al Panel de Cámaras</a></li>
+        </ul>
+    </nav>
+
+    <!-- Header para la Landing Page -->
+    <header class="hero">
+        <h1>Protección de Alta Tecnología</h1>
+        <p>Sistemas de videovigilancia profesionales para tu empresa y hogar</p>
+    </header>
+
+    <main class="container">
+        <h2>Nuestros Productos</h2>
+        <br>
+        
+        <!-- DESARROLLADOR 1 (VENTAS): Tu trabajo principal es en esta sección -->
+        <!-- Las tarjetas de producto deben inyectarse aquí usando JavaScript -->
+        <section id="catalogo-productos" class="grid-productos">
+            <!-- Ejemplo de tarjeta de producto (Luego lo generarán con JS) -->
+            <div class="card glass-card">
+                <img src="https://via.placeholder.com/300x200?text=Camara+IP" alt="Cámara" style="width: 100%; border-radius: 8px;">
+                <h3 style="margin: 10px 0;">Cámara IP Exterior 360</h3>
+                <p>$1,250.00 MXN</p>
+                <button class="btn" style="margin-top: 10px; width: 100%;">Agregar al Carrito</button>
+            </div>
+        </section>
+    </main>
+
+    <!-- Scripts -->
+    <script src="js/api.js"></script>
+    <script src="js/ventas.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>G4S Security | Carrito</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body class="dark-theme">
+    
+    <nav class="navbar glass">
+        <div class="logo">G4S Security</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Catálogo</a></li>
+            <li><a href="carrito.html" class="active">Carrito</a></li>
+            <li><a href="dashboard.html">Ir al Panel de Cámaras</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <h2>Tu Carrito de Compras</h2>
+        <br>
+        
+        <!-- DESARROLLADOR 2 (CARRITO): Tu trabajo principal es aquí -->
+        <div style="display: flex; gap: 2rem; flex-wrap: wrap;">
+            
+            <section style="flex: 2; background: rgba(30,41,59,0.5); padding: 1.5rem; border-radius: 12px;" class="glass-card">
+                <h3>Lista de Artículos</h3>
+                <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 15px 0;">
+                <div id="lista-carrito">
+                    <!-- Los items del carrito se inyectarán con JS -->
+                    <p style="color: #94a3b8;">No hay artículos en tu carrito.</p>
+                </div>
+            </section>
+
+            <aside style="flex: 1; background: rgba(30,41,59,0.5); padding: 1.5rem; border-radius: 12px;" class="glass-card">
+                <h3>Resumen de Compra</h3>
+                <hr style="border: 0; border-top: 1px solid var(--glass-border); margin: 15px 0;">
+                <div style="display: flex; justify-content: space-between; margin-bottom: 10px;">
+                    <span>Subtotal</span>
+                    <span id="subtotal-precio">$0.00</span>
+                </div>
+                <div style="display: flex; justify-content: space-between; font-size: 1.2rem; font-weight: bold; color: var(--accent-color);">
+                    <span>Total</span>
+                    <span id="total-precio">$0.00</span>
+                </div>
+                <button class="btn" style="width: 100%; margin-top: 20px;">Proceder al Pago</button>
+            </aside>
+        </div>
+    </main>
+
+    <script src="js/api.js"></script>
+    <script src="js/carrito.js"></script>
+</body>
+</html>
