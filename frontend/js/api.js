@@ -1,14 +1,14 @@
 /**
  * ARCHIVO: api.js
  * Creado para simular la Base de Datos.
- * TODOS los desarrolladores deben usar esto para no chocar.
+ * TODOS deben usar esto para no chocar.
  */
 
 // Simulación de respuesta de la base de datos basada en nuestro diccionario
 const datosFalsos = {
     productos: [
         {
-            idProducto: 101,
+            id_producto: 101,
             nombreProducto: "Cámara IP Exterior 360",
             descripcion: "Cámara resistente al agua con visión nocturna de 30m.",
             precio: 1250.50,
@@ -16,7 +16,7 @@ const datosFalsos = {
             urlImagen: "https://via.placeholder.com/300x200?text=Camara+Exterior"
         },
         {
-            idProducto: 102,
+            id_producto: 102,
             nombreProducto: "Cámara Domo Interior",
             descripcion: "Ideal para oficinas, micrófono integrado.",
             precio: 850.00,

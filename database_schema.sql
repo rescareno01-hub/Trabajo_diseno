@@ -1,6 +1,3 @@
--- ==========================================
--- SCRIPT DE BASE DE DATOS G4S (MySQL / XAMPP)
--- ==========================================
 
 -- Crear la base de datos (Si no existe)
 CREATE DATABASE IF NOT EXISTS g4s_database;
@@ -20,10 +17,9 @@ CREATE TABLE Usuarios (
     apellidos VARCHAR(100) NOT NULL,
     correo_electronico VARCHAR(150) UNIQUE NOT NULL,
     numero_celular VARCHAR(20),
-    contrasena_hash VARCHAR(255) NOT NULL, -- Contraseña encriptada
+    contrasena VARCHAR(255) NOT NULL, -- Contraseña 
     id_rol INT NOT NULL,
     direccion TEXT, -- Usado principalmente para clientes
-    rfc_o_identificacion VARCHAR(50),
     estado VARCHAR(20) DEFAULT 'Activo',
     fecha_registro TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     FOREIGN KEY (id_rol) REFERENCES Roles(id_rol)
@@ -44,7 +40,6 @@ CREATE TABLE Camaras (
     id_ubicacion INT NOT NULL,
     modelo_camara VARCHAR(100),
     numero_serie VARCHAR(100) UNIQUE,
-    direccion_ip VARCHAR(45),
     url_transmision_en_vivo TEXT, -- URL de la transmisión para mostrar en la web
     estado VARCHAR(50) DEFAULT 'Online',
     FOREIGN KEY (id_ubicacion) REFERENCES Ubicaciones(id_ubicacion) ON DELETE CASCADE
@@ -57,7 +52,6 @@ CREATE TABLE Grabaciones (
     fecha_hora_inicio DATETIME NOT NULL,
     fecha_hora_fin DATETIME,
     url_almacenamiento_nube TEXT NOT NULL,
-    peso_archivo_mb DECIMAL(10, 2),
     FOREIGN KEY (id_camara) REFERENCES Camaras(id_camara) ON DELETE CASCADE
 );
 
